@@ -4,7 +4,117 @@ import MainLayout from '../layouts/MainLayout.astro';
 
 <MainLayout
   title="Experience"
-  description="Jacky Huynh's experience."
+  description="Professional experience and leadership background."
 >
-  <h1>Experience</h1>
+  <section class="hero">
+    <p class="eyebrow">Experience</p>
+
+    <h1>Engineering, Leadership, and Operations</h1>
+
+    <p class="intro">
+      A combination of technical education, business leadership, and
+      hands-on operational experience.
+    </p>
+  </section>
+
+  <section class="experience-section">
+    <h2>Engineering Experience</h2>
+
+    <div class="timeline-item">
+      <div class="timeline-header">
+        <h3>Temple University</h3>
+        <span>B.S. Mechanical Engineering</span>
+      </div>
+
+      <p>
+        Developed a foundation in CAD, simulation, product design, and
+        engineering problem-solving through coursework and hands-on projects.
+      </p>
+    </div>
+  </section>
+
+  <section class="experience-section">
+    <h2>Operations & Leadership</h2>
+
+    <div class="timeline-item">
+      <div class="timeline-header">
+        <h3>My Beloved Lash</h3>
+        <span>Co-Owner & Operations Manager</span>
+      </div>
+
+      <p>
+        Led business operations, managed projects, coordinated vendors,
+        developed processes, and oversaw a growing team in a fast-paced
+        environment.
+      </p>
+    </div>
+  </section>
+
+  <section class="experience-section">
+    <h2>Manufacturing & Process</h2>
+
+    <div class="timeline-item">
+      <div class="timeline-header">
+        <h3>McMaster-Carr</h3>
+        <span>Distribution Specialist & Ergonomic Coach</span>
+      </div>
+
+      <p>
+        Maintained high levels of accuracy and efficiency while supporting
+        training initiatives and process improvement efforts.
+      </p>
+    </div>
+  </section>
 </MainLayout>
+
+<style>
+  .hero {
+    max-width: 48rem;
+    margin-bottom: 4rem;
+  }
+
+  .eyebrow {
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  .intro {
+    max-width: 42rem;
+    font-size: 1.125rem;
+  }
+
+  .experience-section {
+    margin-bottom: 4rem;
+  }
+
+  .timeline-item {
+    padding: 2rem;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+  }
+
+  .timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+  }
+
+  .timeline-header span {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 768px) {
+    .timeline-header {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+</style>

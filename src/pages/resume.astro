@@ -4,7 +4,91 @@ import MainLayout from '../layouts/MainLayout.astro';
 
 <MainLayout
   title="Resume"
-  description="Jacky Huynh's Resume."
+  description="Download Jacky Huynh's resume."
 >
-  <h1>Resume</h1>
+  <section class="hero">
+    <p class="eyebrow">Resume</p>
+
+    <h1>Resume</h1>
+
+    <p class="intro">
+      Download my resume to learn more about my engineering background,
+      technical skills, and professional experience.
+    </p>
+
+    <div class="actions">
+      <a
+        class="primary"
+        href="/resume/jacky-huynh-resume.pdf"
+        target="_blank"
+      >
+        View Resume
+      </a>
+
+      <a
+        class="secondary"
+        href="/resume/jacky-huynh-resume.pdf"
+        download
+      >
+        Download PDF
+      </a>
+    </div>
+  </section>
 </MainLayout>
+
+<style>
+  .hero {
+    max-width: 48rem;
+  }
+
+  .eyebrow {
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  .intro {
+    max-width: 42rem;
+    font-size: 1.125rem;
+  }
+
+  .actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .primary,
+  .secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 160px;
+    min-height: 48px;
+
+    padding: 0.875rem 1.5rem;
+
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .primary {
+    background: var(--accent);
+    color: white;
+  }
+
+  .secondary {
+    border: 1px solid var(--border);
+  }
+
+  @media (max-width: 768px) {
+    .actions {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>

@@ -4,7 +4,87 @@ import MainLayout from '../layouts/MainLayout.astro';
 
 <MainLayout
   title="Contact"
-  description="Contact Jacky Huynh"
+  description="Get in touch with Jacky Huynh."
 >
-  <h1>Contact</h1>
+  <section class="hero">
+    <p class="eyebrow">Contact</p>
+
+    <h1>Let's Connect</h1>
+
+    <p class="intro">
+      I'm currently seeking opportunities in mechanical engineering and would
+      welcome the opportunity to connect.
+    </p>
+
+    <div class="contact-grid">
+      <a
+        class="contact-card"
+        href="mailto:jthuynh06@gmail.com"
+      >
+        <h2>Email</h2>
+        <p>jthuynh06@gmail.com</p>
+      </a>
+
+      <a
+        class="contact-card"
+        href="https://linkedin.com/in/jackyhuynh-me"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <h2>LinkedIn</h2>
+        <p>linkedin.com/in/jackyhuynh-me</p>
+      </a>
+    </div>
+  </section>
 </MainLayout>
+
+<style>
+  .hero {
+    max-width: 48rem;
+  }
+
+  .eyebrow {
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  .intro {
+    max-width: 42rem;
+    font-size: 1.125rem;
+    margin-bottom: 3rem;
+  }
+
+  .contact-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .contact-card {
+    display: block;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+
+    padding: 2rem;
+
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .contact-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+  }
+
+  .contact-card h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-card p {
+    margin-bottom: 0;
+  }
+</style>
