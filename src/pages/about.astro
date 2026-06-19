@@ -4,7 +4,151 @@ import MainLayout from '../layouts/MainLayout.astro';
 
 <MainLayout
   title="About"
-  description="About Jacky Huynh"
+  description="Learn more about Jacky Huynh and his journey back into mechanical engineering."
 >
-  <h1>About</h1>
-</MainLayout>	
+  <section class="hero">
+    <p class="eyebrow">About</p>
+
+    <h1>
+      Mechanical Engineer with a Background in Business Operations
+    </h1>
+
+    <p class="intro">
+      I'm a Mechanical Engineering graduate from Temple University with
+      experience leading business operations, managing projects, and building
+      practical solutions.
+    </p>
+  </section>
+
+  <section class="content-section">
+    <h2>From Engineering to Entrepreneurship and Back</h2>
+
+    <p>
+      I earned my Bachelor of Science in Mechanical Engineering from Temple
+      University, where I developed a strong foundation in design, CAD
+      modeling, simulation, and collaborative problem-solving.
+    </p>
+
+    <p>
+      During my time at Temple, I worked on projects involving autonomous
+      systems, product design, and prototyping. These experiences reinforced my
+      passion for solving complex problems and turning ideas into practical
+      solutions.
+    </p>
+
+    <p>
+      After graduation, I pursued an opportunity to co-found and operate a
+      business. Over several years, I led day-to-day operations, managed
+      projects, coordinated vendors, and developed systems to support growth.
+    </p>
+
+    <p>
+      While the experience expanded my perspective and strengthened my
+      leadership skills, my long-term goal has always been to build a career in
+      engineering.
+    </p>
+  </section>
+
+  <section class="content-section">
+    <h2>Leadership Beyond the Classroom</h2>
+
+    <p>
+      Running a business provided hands-on experience that complements my
+      engineering background.
+    </p>
+
+    <p>
+      I learned how to manage competing priorities, communicate with diverse
+      stakeholders, improve processes, and make decisions with limited
+      information.
+    </p>
+
+    <p>
+      These experiences taught me to think beyond technical solutions and
+      consider the people, timelines, budgets, and operational challenges that
+      influence successful projects.
+    </p>
+  </section>
+
+  <section class="content-section">
+    <h2>Current Focus</h2>
+
+    <p>
+      I'm seeking opportunities in mechanical engineering where I can
+      contribute to design, product development, manufacturing, or project
+      execution while continuing to grow technically and professionally.
+    </p>
+  </section>
+
+  <section class="facts">
+    <div class="fact-card">
+      <h3>Education</h3>
+      <p>B.S. Mechanical Engineering</p>
+      <p>Temple University</p>
+    </div>
+
+    <div class="fact-card">
+      <h3>Location</h3>
+      <p>Greater Philadelphia Area</p>
+    </div>
+
+    <div class="fact-card">
+      <h3>Interests</h3>
+      <p>CAD • Product Design • Simulation • Process Improvement</p>
+    </div>
+  </section>
+</MainLayout>
+
+<style>
+  .hero {
+    max-width: 48rem;
+    margin-bottom: 5rem;
+  }
+
+  .eyebrow {
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  .intro {
+    max-width: 42rem;
+    font-size: 1.125rem;
+  }
+
+  .content-section {
+    max-width: 42rem;
+    margin-bottom: 4rem;
+  }
+
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 5rem;
+  }
+
+  .fact-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 2rem;
+  }
+
+  .fact-card h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .fact-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 900px) {
+    .facts {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

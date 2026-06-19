@@ -5,6 +5,10 @@
   --text-secondary: #6b7280;
   --accent: #2563eb;
   --border: #e5e7eb;
+
+  --font-size-h1: clamp(1.75rem, 3vw, 2.5rem);
+  --font-size-h2: clamp(1.25rem, 2vw, 1.5rem);
+  --font-size-body: 1rem;
 }
 
 * {
@@ -19,7 +23,35 @@ body {
   margin: 0;
   background: var(--background);
   color: var(--text);
+
   font-family: Inter, system-ui, sans-serif;
+  font-size: var(--font-size-body);
+  line-height: 1.7;
+}
+
+h1, h2 {
+  margin: 0;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  line-height: 1.15;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  line-height: 1.25;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin: 0 0 1.5rem;
+  color: var(--text-secondary);
 }
 
 img {
