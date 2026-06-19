@@ -1,51 +1,176 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import MainLayout from '../layouts/MainLayout.astro';
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <Header />
+<MainLayout
+  title="Jacky Huynh"
+  description="Mechanical Engineer with a Background in Business Operations"
+>
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Mechanical Engineer</p>
 
-    <main>
       <h1>Jacky Huynh</h1>
 
-      <p>
-        Mechanical Engineer | Operations Leader | Problem Solver
-      </p>
+      <h2>
+        Mechanical Engineer with a Background in Business Operations
+      </h2>
 
       <p>
-        I'm a Mechanical Engineering graduate from Temple University with
-        experience leading business operations, managing projects, and building
-        practical solutions.
+        Mechanical Engineering graduate from Temple University with experience
+        leading business operations, managing projects, and building practical
+        solutions.
       </p>
 
-      <p>
-        I'm currently pursuing opportunities in mechanical engineering while
-        showcasing my technical projects, leadership experience, and continuous
-        learning.
-      </p>
+      <div class="hero-buttons">
+        <a class="primary" href="/projects">View Projects</a>
 
-      <h2>Featured Projects</h2>
+        <a class="secondary" href="/resume">Download Resume</a>
+      </div>
+    </div>
 
-      <ul>
-        <li>Autonomous Boat Propeller Optimization</li>
-        <li>Water-Resistant LiDAR Camera Casing</li>
-        <li>Senior Design Project Leadership</li>
-      </ul>
+    <div class="hero-image">
+      <img src="/images/headshot.jpg" alt="Jacky Huynh" />
+    </div>
+  </section>
 
-      <p>
-        <a href="/about">About Me</a> |
-        <a href="/blog">Projects & Blog</a>
-      </p>
-    </main>
+  <section>
+    <h2>Featured Projects</h2>
 
-    <Footer />
-  </body>
-</html>
+    <div class="cards">
+      <div class="card">
+        <h3>Autonomous Boat Propeller Optimization</h3>
+        <p>CAD design, simulation, testing, and iteration.</p>
+      </div>
+
+      <div class="card">
+        <h3>Water-Resistant LiDAR Camera Casing</h3>
+        <p>Mechanical design and prototyping.</p>
+      </div>
+
+      <div class="card">
+        <h3>Senior Design Project</h3>
+        <p>Cross-functional collaboration and leadership.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Quick Highlights</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>B.S. Mechanical Engineering</h3>
+        <p>Temple University</p>
+      </div>
+
+      <div class="card">
+        <h3>5+ Years</h3>
+        <p>Operations Leadership</p>
+      </div>
+
+      <div class="card">
+        <h3>CAD • Simulation</h3>
+        <p>Project Management</p>
+      </div>
+    </div>
+  </section>
+</MainLayout>
+
+<style>
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 4rem;
+    align-items: center;
+    min-height: 70vh;
+  }
+
+  .eyebrow {
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .eyebrow {
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin: 0 0 1rem;
+  }
+
+  h2 {
+    font-size: clamp(1.125rem, 2vw, 1.375rem);
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0 0 1.5rem;
+    max-width: 32rem;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .primary,
+  .secondary {
+    padding: 0.875rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .primary {
+    background: var(--accent);
+    color: white;
+  }
+
+  .secondary {
+    border: 1px solid var(--border);
+  }
+
+  .hero-image img {
+    width: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+  }
+
+  section + section {
+    margin-top: 6rem;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 2rem;
+  }
+
+  @media (max-width: 900px) {
+    .hero {
+      grid-template-columns: 1fr;
+    }
+
+    .cards {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-image {
+      order: -1;
+    }
+  }
+</style>
