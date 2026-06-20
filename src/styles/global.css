@@ -21,7 +21,24 @@ html {
 
 body {
   margin: 0;
-  background: var(--background);
+
+  background-color: var(--background);
+
+  background-image:
+    radial-gradient(
+      1200px circle at -10% 100%,
+      rgba(37, 99, 235, 0.15),
+      transparent 55%
+    ),
+    radial-gradient(
+      800px circle at 100% 0%,
+      rgba(37, 99, 235, 0.04),
+      transparent 50%
+    );
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   color: var(--text);
 
   font-family: Inter, system-ui, sans-serif;

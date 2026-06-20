@@ -1,17 +1,45 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_LOGO } from '../consts';
+import { SITE_TITLE } from '../consts';
 
 const isHome = Astro.url.pathname === '/';
 ---
 
+
 <header>
 	<nav>
-		<h2>
-			<a href="/" class={isHome ? 'active-logo' : ''}>
-			{SITE_LOGO}
-			</a>
-		</h2>
+
+		<a
+			href="/"
+			class={`logo ${isHome ? 'active-logo' : ''}`}
+			aria-label={SITE_TITLE}
+		>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="1.75"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				aria-hidden="true"
+			>
+				<path d="M11 10.27 7 3.34" />
+				<path d="m11 13.73-4 6.93" />
+				<path d="M12 22v-2" />
+				<path d="M12 2v2" />
+				<path d="M14 12h8" />
+				<path d="m17 20.66-1-1.73" />
+				<path d="m17 3.34-1 1.73" />
+				<path d="M2 12h2" />
+				<path d="m20.66 17-1.73-1" />
+				<path d="m20.66 7-1.73 1" />
+				<path d="m3.34 17 1.73-1" />
+				<path d="m3.34 7 1.73 1" />
+				<circle cx="12" cy="12" r="2" />
+				<circle cx="12" cy="12" r="8" />
+			</svg>
+		</a>
 
 		<div class="internal-links desktop-nav">
 			<HeaderLink href="/projects">Projects</HeaderLink>
@@ -68,37 +96,41 @@ const isHome = Astro.url.pathname === '/';
 	}
 
 	nav a:hover {
-		color: var(--text);
+		color: var(--accent);
 	}
 
 	nav a.active {
-		color: var(--text);
+		color: var(--accent);
 		font-weight: 600;
 	}
 
-	h2 {
-		position: absolute;
-		left: 1.5rem;
+	.logo {
+	position: absolute;
+	left: 1.5rem;
 
-		margin: 0;
-		font-size: 1rem;
-		font-weight: 600;
-		letter-spacing: -0.02em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 32px;
+	height: 32px;
+
+	color: var(--text-secondary);
+
+	transition:
+		color 0.2s ease,
+		transform 0.2s ease;
 	}
 
-	h2 a {
-		color: var(--text-secondary);
-		font-weight: 500;
-		transition: color 0.2s ease, font-weight 0.2s ease;
+	.logo:hover,
+	.logo.active-logo {
+		color: var(--accent);
+		transform: rotate(180deg);
 	}
-
-	h2 a:hover {
-		color: var(--text);
-	}
-
-	h2 a.active-logo {
-		color: var(--text);
-		font-weight: 600;
+	
+	.logo svg {
+		width: 20px;
+		height: 20px;
 	}
 
 	.internal-links {
@@ -120,8 +152,8 @@ const isHome = Astro.url.pathname === '/';
 			justify-content: space-between;
 		}
 
-		h2 {
-			position: static;
+		.logo {
+		position: static;
 		}
 
 		.desktop-nav {
