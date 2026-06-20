@@ -19,8 +19,10 @@ import MainLayout from '../layouts/MainLayout.astro';
 
 <section class="project-grid">
   <a class="project-card" href="/projects/propeller-optimization">
-    <div class="project-image"></div>
-
+    <img
+      src="/images/projects/boat-propeller.jpg"
+      alt="Autonomous Boat Propeller Optimization"
+    />
     <div class="project-content">
       <h2>Autonomous Boat Propeller Optimization</h2>
 
@@ -34,7 +36,10 @@ import MainLayout from '../layouts/MainLayout.astro';
   </a>
 
   <a class="project-card" href="/projects/boat-propulsion">
-    <div class="project-image"></div>
+    <img
+      src="/images/projects/boat-propulsion.jpg"
+      alt="Boat Propulsion System Design"
+    />
 
     <div class="project-content">
       <h2>Boat Propulsion System Design</h2>
@@ -49,7 +54,10 @@ import MainLayout from '../layouts/MainLayout.astro';
   </a>
 
   <a class="project-card" href="/projects/lidar-casing">
-    <div class="project-image"></div>
+    <img
+      src="/images/projects/lidar-casing.jpg"
+      alt="Water-Resistant LiDAR Camera Casing"
+    />
 
     <div class="project-content">
       <h2>Water-Resistant LiDAR Camera Casing</h2>
@@ -64,7 +72,10 @@ import MainLayout from '../layouts/MainLayout.astro';
   </a>
 
   <a class="project-card" href="/projects/c-clamp-analysis">
-    <div class="project-image"></div>
+    <img
+      src="/images/projects/c-clamp.jpg"
+      alt="C-Clamp CAD Model and Failure Analysis"
+    />
 
     <div class="project-content">
       <h2>C-Clamp CAD Model and Failure Analysis</h2>
@@ -79,7 +90,10 @@ import MainLayout from '../layouts/MainLayout.astro';
   </a>
 
   <a class="project-card" href="/projects/mini-forklift">
-    <div class="project-image"></div>
+    <img
+      src="/images/projects/mini-forklift.jpg"
+      alt="Mini Forklift Design and Assembly"
+    />
 
     <div class="project-content">
       <h2>Mini Forklift Design and Assembly</h2>
@@ -94,7 +108,10 @@ import MainLayout from '../layouts/MainLayout.astro';
   </a>
 
   <a class="project-card" href="/projects/senior-design">
-    <div class="project-image"></div>
+    <img
+      src="/images/projects/senior-design.jpg"
+      alt="Senior Design Project"
+    />
 
     <div class="project-content">
       <h2>Senior Design Project</h2>
@@ -114,13 +131,6 @@ import MainLayout from '../layouts/MainLayout.astro';
   .hero {
     max-width: 48rem;
     margin-bottom: 4rem;
-  }
-
-  .eyebrow {
-    color: var(--accent);
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-bottom: 0.75rem;
   }
 
   .intro {
@@ -151,9 +161,11 @@ import MainLayout from '../layouts/MainLayout.astro';
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
   }
 
-  .project-image {
-    background: var(--border);
-    min-height: 220px;
+  .project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
   }
 
   .project-content {

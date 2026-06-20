@@ -1,0 +1,69 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+---
+
+<MainLayout
+  title="Autonomous Boat Propeller Optimization"
+  description="Designed, simulated, and tested propeller geometries to improve autonomous boat performance."
+>
+  <section class="hero">
+    <p class="eyebrow">Projects</p>
+
+    <h1>Autonomous Boat Propeller Optimization</h1>
+
+    <p class="intro">
+      Designed, simulated, and tested multiple propeller geometries to improve
+      the performance of an autonomous boat platform.
+    </p>
+
+    <img
+      src="/images/projects/boat-propeller.jpg"
+      alt="Autonomous Boat Propeller Optimization"
+    />
+  </section>
+
+  <section>
+    <h2>Overview</h2>
+
+    <p>
+      The objective of this project was to optimize propeller performance for
+      an autonomous boat by balancing thrust, efficiency, and manufacturability.
+    </p>
+  </section>
+
+  <section>
+    <h2>Process</h2>
+
+    <p>
+      Multiple propeller geometries were designed in SOLIDWORKS and evaluated
+      using flow simulation tools. Iterative improvements were made based on
+      simulation results before prototypes were manufactured using 3D printing.
+    </p>
+  </section>
+
+  <section>
+    <h2>Tools Used</h2>
+
+    <p>SOLIDWORKS • CFD • 3D Printing • Testing</p>
+  </section>
+</MainLayout>
+
+<style>
+  img {
+    width: 100%;
+    border-radius: 24px;
+    margin-top: 2rem;
+  }
+
+  section + section {
+    margin-top: 4rem;
+  }
+
+  .hero {
+    max-width: 48rem;
+  }
+
+  .intro {
+    font-size: 1.125rem;
+  }
+</style>

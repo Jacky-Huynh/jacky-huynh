@@ -49,6 +49,15 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.eyebrow {
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
 p {
   margin: 0 0 1.5rem;
   color: var(--text-secondary);
