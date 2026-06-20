@@ -6,9 +6,10 @@ import MainLayout from '../layouts/MainLayout.astro';
   title="Jacky Huynh"
   description="Mechanical Engineer with a Background in Business Operations"
 >
+
   <section class="hero">
     <div class="hero-content">
-    
+
       <p class="eyebrow">
       JACKY HUYNH • MECHANICAL ENGINEER
       </p>
@@ -25,7 +26,6 @@ import MainLayout from '../layouts/MainLayout.astro';
 
       <div class="hero-buttons">
         <a class="primary" href="/projects">View Projects</a>
-
         <a class="secondary" href="/resume">Download Resume</a>
       </div>
     </div>
@@ -124,11 +124,9 @@ import MainLayout from '../layouts/MainLayout.astro';
     width: 100%;
     aspect-ratio: 1 / 1;
 
-    border-radius: 50%;
+    border-radius: 5%;
     object-fit: cover;
-
-    border: 4px solid rgba(29, 48, 90, 0.15);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
   }
 
   section + section {
@@ -141,40 +139,40 @@ import MainLayout from '../layouts/MainLayout.astro';
     gap: 1.5rem;
   }
 
-.card {
-  background: rgba(255, 255, 255, 0.65);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  .card {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
 
-  padding: 2rem;
+    padding: 2rem;
 
-  box-shadow:
-    0 8px 24px rgba(15, 23, 42, 0.04),
-    0 1px 2px rgba(15, 23, 42, 0.04);
+    box-shadow:
+      0 8px 24px rgba(15, 23, 42, 0.04),
+      0 1px 2px rgba(15, 23, 42, 0.04);
 
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease,
-    border-color 0.2s ease;
-}
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      border-color 0.2s ease;
+  }
 
-.card:hover {
-  transform: translateY(-2px);
+  .card:hover {
+    transform: translateY(-2px);
 
-  border-color: rgba(37, 99, 235, 0.12);
+    border-color: rgba(37, 99, 235, 0.12);
 
-  box-shadow:
-    0 16px 32px rgba(15, 23, 42, 0.06),
-    0 2px 8px rgba(15, 23, 42, 0.04);
-}
+    box-shadow:
+      0 16px 32px rgba(15, 23, 42, 0.06),
+      0 2px 8px rgba(15, 23, 42, 0.04);
+  }
 
   @media (max-width: 900px) {
     .hero {
       grid-template-columns: 1fr;
-      gap: 2rem;
+      gap: 3rem;
       min-height: auto;
     }
 
