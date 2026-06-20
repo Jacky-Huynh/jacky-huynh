@@ -98,8 +98,8 @@ a {
   body {
     background-image:
       radial-gradient(
-        900px circle at -10% 150%,
-        rgba(37, 99, 235, 0.3),
+        1200px circle at -10% 150%,
+        rgba(37, 99, 235, 0.5),
         transparent 55%
       );
 
