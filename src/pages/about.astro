@@ -10,7 +10,7 @@ import MainLayout from '../layouts/MainLayout.astro';
     <p class="eyebrow">About</p>
 
     <h1>
-      Engineering Graduate, Business Builder, and Problem Solver
+      Mechanical Engineer, Operations Leader, and Problem Solver
     </h1>
 
     <p class="intro">
@@ -83,42 +83,41 @@ import MainLayout from '../layouts/MainLayout.astro';
   </section>
 
   <section class="content-section">
-    <h2>What I Bring</h2>
+    <h2>Technical Skills</h2>
 
-    <div class="skills-grid">
-      <div class="skill-card">
-        <h3>Engineering</h3>
+    <div class="technical-skills-grid">
+      <div class="technical-skill-card">
+        <h3>Engineering Software</h3>
 
         <p>
-          CAD Design<br />
-          Engineering Analysis<br />
-          Simulation<br />
-          Testing & Validation<br />
-          Technical Problem-Solving
+          SOLIDWORKS<br />
+          AutoCAD<br />
+          MATLAB<br />
+          Microsoft Excel & Data Analysis
         </p>
       </div>
 
-      <div class="skill-card">
-        <h3>Operations</h3>
+      <div class="technical-skill-card">
+        <h3>Manufacturing & Fabrication</h3>
+
+        <p>
+          Mill<br />
+          Lathe<br />
+          Laser Cutting<br />
+          3D Printing<br />
+          Mechanical Assembly & Testing
+        </p>
+      </div>
+
+      <div class="technical-skill-card">
+        <h3>Professional Skills</h3>
 
         <p>
           Project Management<br />
           Process Improvement<br />
-          Documentation<br />
-          Planning & Coordination<br />
-          Systems Development
-        </p>
-      </div>
-
-      <div class="skill-card">
-        <h3>Leadership</h3>
-
-        <p>
-          Team Development<br />
-          Communication<br />
-          Accountability<br />
-          Training & Onboarding<br />
-          Cross-Functional Collaboration
+          Technical Documentation<br />
+          Team Leadership<br />
+          Problem Solving
         </p>
       </div>
     </div>
@@ -176,26 +175,26 @@ import MainLayout from '../layouts/MainLayout.astro';
     margin-bottom: 4rem;
   }
 
-  .skills-grid {
+  .technical-skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin-top: 2rem;
   }
 
-  .skill-card {
+  .technical-skill-card {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 20px;
     padding: 1.75rem;
   }
 
-  .skill-card h3 {
+  .technical-skill-card h3 {
     margin-top: 0;
     margin-bottom: 1rem;
   }
 
-  .skill-card p {
+  .technical-skill-card p {
     margin-bottom: 0;
     line-height: 1.8;
   }
@@ -225,7 +224,7 @@ import MainLayout from '../layouts/MainLayout.astro';
   }
 
   @media (max-width: 900px) {
-    .skills-grid,
+    .technical-skills-grid,
     .facts {
       grid-template-columns: 1fr;
     }
