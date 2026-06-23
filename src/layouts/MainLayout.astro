@@ -29,8 +29,18 @@ const { title, description } = Astro.props;
 </html>
 
 <style is:global>
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
   main {
+    flex: 1;
+
     max-width: 1200px;
+    width: 100%;
+
     margin: 0 auto;
     padding: 4rem 1.5rem;
   }

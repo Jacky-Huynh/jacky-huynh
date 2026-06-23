@@ -1,5 +1,5 @@
 :root {
-  --background: #ffffff;
+  --background: #f8fafc;
   --surface: #f9fafb;
   --text: #1f2937;
   --text-secondary: #6b7280;
@@ -31,40 +31,15 @@ body {
   background:
     radial-gradient(
       circle at top right,
-      rgba(59, 130, 246, 0.05),
+      rgba(37, 99, 235, 0.06),
       transparent 35%
     ),
     radial-gradient(
       circle at bottom left,
-      rgba(59, 130, 246, 0.03),
+      rgba(37, 99, 235, 0.04),
       transparent 40%
-    );
-
-  position: relative;
-}
-
-body::before {
-  content: "";
-
-  position: fixed;
-  inset: 0;
-
-  pointer-events: none;
-
-  background-image:
-    linear-gradient(
-      rgba(15, 23, 42, 0.035) 1px,
-      transparent 1px
     ),
-    linear-gradient(
-      90deg,
-      rgba(15, 23, 42, 0.035) 1px,
-      transparent 1px
-    );
-
-  background-size: 48px 48px;
-
-  z-index: -1;
+    var(--background);
 }
 
 h1,

@@ -33,6 +33,10 @@ import MainLayout from '../layouts/MainLayout.astro';
         </p>
 
         <span>CAD • Simulation • Testing</span>
+
+        <span class="card-link">
+          View Project →
+        </span>
       </div>
     </a>
 
@@ -51,6 +55,10 @@ import MainLayout from '../layouts/MainLayout.astro';
         </p>
 
         <span>System Design • Analysis • Component Selection</span>
+
+        <span class="card-link">
+          View Project →
+        </span>
       </div>
     </a>
 
@@ -69,6 +77,10 @@ import MainLayout from '../layouts/MainLayout.astro';
         </p>
 
         <span>Design • Prototyping • Manufacturing</span>
+
+        <span class="card-link">
+          View Project →
+        </span>
       </div>
     </a>
 
@@ -87,6 +99,10 @@ import MainLayout from '../layouts/MainLayout.astro';
         </p>
 
         <span>SOLIDWORKS • FEA • Simulation</span>
+
+        <span class="card-link">
+          View Project →
+        </span>
       </div>
     </a>
 
@@ -105,6 +121,10 @@ import MainLayout from '../layouts/MainLayout.astro';
         </p>
 
         <span>MATLAB • Mechanical Design • System Integration</span>
+
+        <span class="card-link">
+          View Project →
+        </span>
       </div>
     </a>
 
@@ -123,6 +143,10 @@ import MainLayout from '../layouts/MainLayout.astro';
         </p>
 
         <span>Leadership • Project Management • Systems Integration</span>
+
+        <span class="card-link">
+          View Project →
+        </span>
       </div>
     </a>
   </section>
@@ -154,7 +178,10 @@ import MainLayout from '../layouts/MainLayout.astro';
     border-radius: 24px;
 
     overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
   }
 
   .project-card:hover {
@@ -167,13 +194,19 @@ import MainLayout from '../layouts/MainLayout.astro';
     height: 260px;
     object-fit: cover;
     display: block;
+
+    transition: transform 0.3s ease;
+  }
+
+  .project-card:hover img {
+    transform: scale(1.03);
   }
 
   .project-content {
     padding: 1.5rem;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
 
   .project-content h2 {
@@ -185,11 +218,28 @@ import MainLayout from '../layouts/MainLayout.astro';
     margin-bottom: 0.75rem;
   }
 
-  .project-content span {
+  .project-content span:not(.card-link) {
     color: var(--text-secondary);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 500;
     line-height: 1.4;
+    opacity: 0.8;
+    letter-spacing: 0.02em;
+  }
+
+  .card-link {
+    margin-top: auto;
+    padding-top: 1.5rem;
+
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.95rem;
+
+    transition: transform 0.2s ease;
+  }
+
+  .project-card:hover .card-link {
+    transform: translateX(4px);
   }
 
   @media (max-width: 900px) {
