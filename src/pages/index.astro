@@ -50,6 +50,10 @@ import MainLayout from '../layouts/MainLayout.astro';
           analysis, manufacturing, simulation, and multidisciplinary
           engineering projects.
         </p>
+
+        <span class="card-link">
+          View Experience →
+        </span>
       </a>
 
       <a class="card" href="/experience/mcmaster-carr">
@@ -64,6 +68,10 @@ import MainLayout from '../layouts/MainLayout.astro';
           consistency, and continuous improvement within a highly structured
           operational environment.
         </p>
+
+        <span class="card-link">
+          View Experience →
+        </span>
       </a>
 
       <a class="card" href="/experience/my-beloved-lash">
@@ -77,6 +85,10 @@ import MainLayout from '../layouts/MainLayout.astro';
           Built and operated a business while managing projects, employees,
           systems, customers, and long-term organizational growth.
         </p>
+
+        <span class="card-link">
+          View Experience →
+        </span>
       </a>
     </div>
   </section>
@@ -171,6 +183,9 @@ import MainLayout from '../layouts/MainLayout.astro';
   }
 
   .card {
+    display: flex;
+    flex-direction: column;
+
     background: rgba(255, 255, 255, 0.65);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -208,6 +223,21 @@ import MainLayout from '../layouts/MainLayout.astro';
     font-size: 0.95rem;
     margin-top: -0.5rem;
     margin-bottom: 1rem;
+  }
+
+  .card-link {
+    margin-top: auto;
+    padding-top: 1.5rem;
+
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.95rem;
+
+    transition: transform 0.2s ease;
+  }
+
+  .card:hover .card-link {
+    transform: translateX(4px);
   }
 
   .current-focus {
