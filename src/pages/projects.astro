@@ -179,13 +179,10 @@ import MainLayout from '../layouts/MainLayout.astro';
 
     overflow: hidden;
 
-    transition:
-      transform 0.2s ease,
-      box-shadow 0.2s ease;
+    transition: box-shadow 0.2s ease;
   }
 
   .project-card:hover {
-    transform: translateY(-2px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
   }
 
@@ -194,12 +191,6 @@ import MainLayout from '../layouts/MainLayout.astro';
     height: 260px;
     object-fit: cover;
     display: block;
-
-    transition: transform 0.3s ease;
-  }
-
-  .project-card:hover img {
-    transform: scale(1.03);
   }
 
   .project-content {
@@ -234,12 +225,6 @@ import MainLayout from '../layouts/MainLayout.astro';
     color: var(--accent);
     font-weight: 600;
     font-size: 0.95rem;
-
-    transition: transform 0.2s ease;
-  }
-
-  .project-card:hover .card-link {
-    transform: translateX(4px);
   }
 
   @media (max-width: 900px) {
