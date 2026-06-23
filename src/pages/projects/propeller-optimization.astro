@@ -4,7 +4,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
 
 <MainLayout
   title="Autonomous Boat Propeller Optimization"
-  description="Designed, simulated, and tested propeller geometries to improve autonomous boat performance."
+  description="Designed, simulated, manufactured, and tested custom propeller geometries for an autonomous boat platform."
 >
   <section class="hero">
     <p class="eyebrow">Projects</p>
@@ -12,49 +12,82 @@ import MainLayout from '../../layouts/MainLayout.astro';
     <h1>Autonomous Boat Propeller Optimization</h1>
 
     <p class="intro">
-      Designed, simulated, and tested multiple propeller geometries to improve
-      the performance of an autonomous boat platform.
+      Designed, simulated, manufactured, and tested custom propeller geometries
+      to improve the performance and controllability of an autonomous boat.
     </p>
-
-    <img
-      src="/images/projects/boat-propeller.jpg"
-      alt="Autonomous Boat Propeller Optimization"
-    />
   </section>
 
   <section>
     <h2>Overview</h2>
 
     <p>
-      The objective of this project was to optimize propeller performance for
-      an autonomous boat by balancing thrust, efficiency, and manufacturability.
+      As part of a senior design project, our team developed an autonomous boat
+      platform that utilized a flexible shaft propulsion system. Existing
+      propellers were not optimized for our application, so custom propeller
+      geometries were designed to achieve reliable thrust and predictable boat
+      control.
     </p>
+
+    <p>
+      The objective was to create propellers that balanced performance,
+      efficiency, and controllability while remaining compatible with the
+      mechanical constraints of the propulsion system.
+    </p>
+  </section>
+
+  <section>
+    <h2>My Contributions</h2>
+
+    <ul>
+      <li>Designed custom propeller geometries in SOLIDWORKS</li>
+      <li>Performed CFD analysis using SOLIDWORKS Flow Simulation</li>
+      <li>Modified blade geometry based on simulation results</li>
+      <li>Prepared models for additive manufacturing</li>
+      <li>
+        Conducted real-world testing using a remote-controlled boat in a
+        swimming pool
+      </li>
+      <li>
+        Evaluated performance through three design iterations and four prototype
+        prints
+      </li>
+    </ul>
   </section>
 
   <section>
     <h2>Process</h2>
 
     <p>
-      Multiple propeller geometries were designed in SOLIDWORKS and evaluated
-      using flow simulation tools. Iterative improvements were made based on
-      simulation results before prototypes were manufactured using 3D printing.
+      Three propeller iterations were designed and evaluated using SOLIDWORKS
+      Flow Simulation. Simulation results were used to analyze flow behavior
+      around the blades and guide geometry adjustments intended to improve
+      efficiency and overall performance.
+    </p>
+
+    <p>
+      Four sets of propellers were manufactured using 3D printing and tested on
+      a remote-controlled boat in a swimming pool. Comparing simulation data
+      with real-world performance helped validate design decisions and refine
+      the final geometry through an iterative engineering process.
+    </p>
+
+    <p>
+      The project demonstrated a complete engineering workflow consisting of
+      CAD design, simulation, additive manufacturing, prototype testing, and
+      design refinement.
     </p>
   </section>
 
   <section>
     <h2>Tools Used</h2>
 
-    <p>SOLIDWORKS • CFD • 3D Printing • Testing</p>
+    <p>
+      SOLIDWORKS • SOLIDWORKS Flow Simulation • 3D Printing • Prototype Testing
+    </p>
   </section>
 </MainLayout>
 
 <style>
-  img {
-    width: 100%;
-    border-radius: 24px;
-    margin-top: 2rem;
-  }
-
   section + section {
     margin-top: 4rem;
   }

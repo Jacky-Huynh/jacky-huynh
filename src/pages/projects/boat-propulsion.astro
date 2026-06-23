@@ -4,7 +4,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
 
 <MainLayout
   title="Boat Propulsion System Design"
-  description="Designed and integrated a propulsion system for an autonomous boat."
+  description="Designed and integrated a dual-motor propulsion system for a remotely operated boat using engineering analysis, component selection, and real-world testing."
 >
   <section class="hero">
     <p class="eyebrow">Projects</p>
@@ -12,49 +12,110 @@ import MainLayout from '../../layouts/MainLayout.astro';
     <h1>Boat Propulsion System Design</h1>
 
     <p class="intro">
-      Designed and integrated a propulsion system to optimize performance
-      within project constraints.
+      Designed and integrated a dual-motor propulsion system for a remotely
+      operated boat, balancing performance, maneuverability, reliability, and
+      budget constraints through engineering analysis and prototype testing.
     </p>
-
-    <img
-      src="/images/projects/boat-propulsion.jpg"
-      alt="Boat Propulsion System Design"
-    />
   </section>
 
   <section>
     <h2>Overview</h2>
 
     <p>
-      This project focused on selecting and integrating motors, batteries,
-      shafts, and supporting components for an autonomous boat platform.
+      As part of a senior design project, our team developed a remotely operated
+      boat intended to serve as the foundation for a future autonomous platform.
+      The propulsion system was critical to the boat's performance, requiring
+      sufficient thrust, reliable maneuverability, and compatibility with a
+      limited project budget.
     </p>
+
+    <p>
+      The objective of this project was to design and integrate a dual-motor
+      propulsion system capable of independently controlling two propellers
+      through differential thrust. The system also needed to operate in a
+      marine environment while addressing reliability concerns identified in
+      previous designs.
+    </p>
+  </section>
+
+  <section>
+    <h2>My Contributions</h2>
+
+    <ul>
+      <li>Defined propulsion system requirements and performance targets</li>
+      <li>
+        Evaluated and compared three motor candidates based on torque, RPM,
+        size, cost, and environmental constraints
+      </li>
+      <li>
+        Developed MATLAB calculations to estimate theoretical thrust and boat
+        speed
+      </li>
+      <li>
+        Used analysis results to eliminate motor options that could not meet
+        performance requirements
+      </li>
+      <li>
+        Selected and integrated motors, flexible shafts, and propulsion
+        components
+      </li>
+      <li>
+        Installed mechanical and electrical propulsion system components
+      </li>
+      <li>
+        Conducted water testing and validated system performance
+      </li>
+    </ul>
   </section>
 
   <section>
     <h2>Process</h2>
 
     <p>
-      Component options were evaluated based on performance requirements,
-      efficiency targets, budget constraints, and compatibility with the
-      overall system architecture.
+      The design process began by establishing propulsion requirements for a
+      remotely operated boat utilizing differential thrust for steering and
+      maneuverability. Multiple motor options were researched and compared to
+      identify candidates capable of meeting performance goals while remaining
+      within budget.
+    </p>
+
+    <p>
+      MATLAB was used to analyze motor performance and estimate theoretical
+      thrust and boat speed. These calculations provided a quantitative basis
+      for component selection and allowed propulsion options to be compared
+      before purchase and integration. One candidate motor was eliminated after
+      analysis indicated it would not produce sufficient thrust for the
+      application.
+    </p>
+
+    <p>
+      The final design utilized two independently controlled motors connected
+      to propellers through flexible shafts. In addition to improving packaging
+      within the hull, the design addressed reliability concerns observed in
+      previous iterations by helping isolate critical components from water
+      intrusion.
+    </p>
+
+    <p>
+      After installation of the propulsion system and supporting electrical
+      components, the boat was tested in water to evaluate maneuverability and
+      overall performance. Actual performance was slightly below theoretical
+      predictions but remained within the team's acceptable operating range
+      while providing reliable propulsion and steering control.
     </p>
   </section>
 
   <section>
     <h2>Tools Used</h2>
 
-    <p>System Design • Analysis • Component Selection • Integration</p>
+    <p>
+      MATLAB • Engineering Analysis • Motor Selection • System Integration •
+      Mechanical Assembly • Electrical Wiring • Prototype Testing
+    </p>
   </section>
 </MainLayout>
 
 <style>
-  img {
-    width: 100%;
-    border-radius: 24px;
-    margin-top: 2rem;
-  }
-
   section + section {
     margin-top: 4rem;
   }

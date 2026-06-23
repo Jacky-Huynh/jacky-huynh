@@ -4,79 +4,133 @@ import MainLayout from '../layouts/MainLayout.astro';
 
 <MainLayout
   title="About"
-  description="Learn more about Jacky Huynh and his journey back into mechanical engineering."
+  description="Learn more about Jacky Huynh and his journey through engineering, business operations, and leadership."
 >
   <section class="hero">
     <p class="eyebrow">About</p>
 
     <h1>
-      Mechanical Engineer with a Background in Business Operations
+      Engineering Graduate, Business Builder, and Problem Solver
     </h1>
 
     <p class="intro">
-      I'm a Mechanical Engineering graduate from Temple University with
-      experience leading business operations, managing projects, and building
-      practical solutions.
+      I'm a Mechanical Engineering graduate from Temple University who enjoys
+      solving problems, building systems, and turning ideas into reality. My
+      experiences range from engineering design projects and technical analysis
+      to leading business operations and managing teams.
     </p>
   </section>
 
   <section class="content-section">
-    <h2>From Engineering to Entrepreneurship and Back</h2>
+    <h2>My Journey</h2>
 
     <p>
       I earned my Bachelor of Science in Mechanical Engineering from Temple
-      University, where I developed a strong foundation in design, CAD
-      modeling, simulation, and collaborative problem-solving.
+      University, where I developed a foundation in design, analysis,
+      manufacturing, and problem-solving through coursework, laboratory
+      experience, and multidisciplinary projects.
     </p>
 
     <p>
-      During my time at Temple, I worked on projects involving autonomous
-      systems, product design, and prototyping. These experiences reinforced my
-      passion for solving complex problems and turning ideas into practical
-      solutions.
+      After graduation, an opportunity arose to build a business from the
+      ground up. What began as a personal goal evolved into a multi-year
+      experience managing projects, leading teams, developing systems, and
+      navigating the challenges of operating a growing business.
     </p>
 
     <p>
-      After graduation, I pursued an opportunity to co-found and operate a
-      business. Over several years, I led day-to-day operations, managed
-      projects, coordinated vendors, and developed systems to support growth.
+      Although my career path temporarily moved away from traditional
+      engineering roles, the experience strengthened many of the same skills
+      that make successful engineers effective: problem-solving, project
+      management, communication, process improvement, and continuous learning.
     </p>
 
     <p>
-      While the experience expanded my perspective and strengthened my
-      leadership skills, my long-term goal has always been to build a career in
-      engineering.
+      Today, I'm combining those experiences as I return to the engineering
+      field, bringing both technical knowledge and real-world leadership
+      experience to the next chapter of my career.
     </p>
   </section>
 
   <section class="content-section">
-    <h2>Leadership Beyond the Classroom</h2>
+    <h2>What I've Learned</h2>
 
     <p>
-      Running a business provided hands-on experience that complements my
-      engineering background.
+      Engineering taught me how to analyze problems. Business taught me how to
+      execute solutions.
     </p>
 
     <p>
-      I learned how to manage competing priorities, communicate with diverse
-      stakeholders, improve processes, and make decisions with limited
-      information.
+      Together, these experiences shaped the way I approach challenges today.
+      Whether I'm designing a component, managing a project, improving a
+      process, or leading a team, I focus on understanding the problem,
+      identifying constraints, and developing practical solutions.
     </p>
 
     <p>
-      These experiences taught me to think beyond technical solutions and
-      consider the people, timelines, budgets, and operational challenges that
-      influence successful projects.
+      One of the most valuable lessons I've learned is that successful projects
+      require more than technical expertise. Communication, accountability,
+      planning, and continuous improvement are often just as important as the
+      technical solution itself.
     </p>
+
+    <p>
+      These experiences also changed how I view the world around me. Whether
+      it's a machine, structure, product, or process, I naturally think about
+      why it was designed a certain way, what constraints influenced those
+      decisions, and how it could potentially be improved.
+    </p>
+  </section>
+
+  <section class="content-section">
+    <h2>What I Bring</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Engineering</h3>
+
+        <p>
+          CAD Design<br />
+          Engineering Analysis<br />
+          Simulation<br />
+          Testing & Validation<br />
+          Technical Problem-Solving
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Operations</h3>
+
+        <p>
+          Project Management<br />
+          Process Improvement<br />
+          Documentation<br />
+          Planning & Coordination<br />
+          Systems Development
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Leadership</h3>
+
+        <p>
+          Team Development<br />
+          Communication<br />
+          Accountability<br />
+          Training & Onboarding<br />
+          Cross-Functional Collaboration
+        </p>
+      </div>
+    </div>
   </section>
 
   <section class="content-section">
     <h2>Current Focus</h2>
 
     <p>
-      I'm seeking opportunities in mechanical engineering where I can
-      contribute to design, product development, manufacturing, or project
-      execution while continuing to grow technically and professionally.
+      I'm seeking opportunities where I can apply both my engineering
+      education and operational experience to contribute to meaningful
+      projects, continue developing technically, and grow as an engineer.
     </p>
   </section>
 
@@ -88,13 +142,13 @@ import MainLayout from '../layouts/MainLayout.astro';
     </div>
 
     <div class="fact-card">
-      <h3>Location</h3>
-      <p>Greater Philadelphia Area</p>
+      <h3>Experience</h3>
+      <p>Engineering • Operations • Leadership</p>
     </div>
 
     <div class="fact-card">
-      <h3>Interests</h3>
-      <p>CAD • Product Design • Simulation • Process Improvement</p>
+      <h3>Focus Areas</h3>
+      <p>Design • Manufacturing • Process Improvement</p>
     </div>
   </section>
 </MainLayout>
@@ -118,8 +172,32 @@ import MainLayout from '../layouts/MainLayout.astro';
   }
 
   .content-section {
-    max-width: 42rem;
+    max-width: 48rem;
     margin-bottom: 4rem;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .skill-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 1.75rem;
+  }
+
+  .skill-card h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .skill-card p {
+    margin-bottom: 0;
+    line-height: 1.8;
   }
 
   .facts {
@@ -147,6 +225,7 @@ import MainLayout from '../layouts/MainLayout.astro';
   }
 
   @media (max-width: 900px) {
+    .skills-grid,
     .facts {
       grid-template-columns: 1fr;
     }

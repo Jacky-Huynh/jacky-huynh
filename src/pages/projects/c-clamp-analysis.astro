@@ -3,58 +3,97 @@ import MainLayout from '../../layouts/MainLayout.astro';
 ---
 
 <MainLayout
-  title="C-Clamp CAD Model and Failure Analysis"
-  description="Reconstructed and analyzed a C-clamp using finite element analysis."
+  title="C-Clamp Reverse Engineering and Failure Analysis"
+  description="Reverse engineered a commercial C-clamp and used finite element analysis to identify failure locations under extreme loading conditions."
 >
   <section class="hero">
     <p class="eyebrow">Projects</p>
 
-    <h1>C-Clamp CAD Model and Failure Analysis</h1>
+    <h1>C-Clamp Reverse Engineering and Failure Analysis</h1>
 
     <p class="intro">
-      Reconstructed a C-clamp CAD model and performed finite element analysis
-      to identify failure points.
+      Reverse engineered a commercial C-clamp, recreated it in SOLIDWORKS, and
+      performed finite element analysis to identify structural failure points
+      under extreme loading conditions.
     </p>
-
-    <img
-      src="/images/projects/c-clamp.jpg"
-      alt="C-Clamp CAD Model and Failure Analysis"
-    />
   </section>
 
   <section>
     <h2>Overview</h2>
 
     <p>
-      This project involved reverse engineering a physical C-clamp and
-      evaluating its structural performance under load.
+      This project focused on reverse engineering and structural analysis of a
+      commercially manufactured C-clamp. The objective was to accurately
+      recreate the product in SOLIDWORKS, assemble the individual components,
+      and evaluate the clamp's structural performance under increasingly severe
+      loading conditions.
     </p>
+
+    <p>
+      By combining precise measurements, CAD modeling, assembly design, and
+      finite element analysis, the project investigated how the clamp would
+      behave under extreme use and identified the location most susceptible to
+      structural failure.
+    </p>
+  </section>
+
+  <section>
+    <h2>My Contributions</h2>
+
+    <ul>
+      <li>Measured and documented a commercial C-clamp for reverse engineering</li>
+      <li>Created a 1:1 CAD model in SOLIDWORKS using physical measurements</li>
+      <li>Modeled the frame, threaded bolt, and handle as separate components</li>
+      <li>Built a complete assembly using SOLIDWORKS mates</li>
+      <li>Assigned material properties to replicate the real product</li>
+      <li>Performed finite element analysis under extreme loading conditions</li>
+      <li>Identified the load path, failure location, and limiting structural features</li>
+      <li>Evaluated how geometry influenced overall clamp strength</li>
+    </ul>
   </section>
 
   <section>
     <h2>Process</h2>
 
     <p>
-      Precision measurements were used to create a 1:1 CAD model, which was
-      then analyzed using finite element methods to identify stress
-      concentrations and failure locations.
+      The project began by selecting a commercially available C-clamp and
+      recording physical dimensions to create an accurate digital
+      representation. Each component was measured and recreated individually in
+      SOLIDWORKS to closely match the geometry of the original product.
+    </p>
+
+    <p>
+      The frame, threaded bolt, and handle were modeled as separate parts and
+      assembled into a complete working assembly. Material properties were then
+      assigned to approximate the behavior of the actual clamp during loading.
+    </p>
+
+    <p>
+      Finite element analysis was performed to evaluate structural behavior
+      under increasingly large clamping forces. Stress concentrations were
+      examined to determine where failure would occur and how the load was
+      distributed throughout the assembly.
+    </p>
+
+    <p>
+      Analysis showed that the highest stresses developed at the neck of the
+      clamp frame, making it the most likely location for failure under extreme
+      loading conditions. The results demonstrated how geometry and load paths
+      influence structural performance and product durability.
     </p>
   </section>
 
   <section>
     <h2>Tools Used</h2>
 
-    <p>SOLIDWORKS • FEA • Simulation</p>
+    <p>
+      SOLIDWORKS • SOLIDWORKS Simulation • Finite Element Analysis (FEA) •
+      Reverse Engineering • Assembly Modeling
+    </p>
   </section>
 </MainLayout>
 
 <style>
-  img {
-    width: 100%;
-    border-radius: 24px;
-    margin-top: 2rem;
-  }
-
   section + section {
     margin-top: 4rem;
   }

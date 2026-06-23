@@ -12,8 +12,9 @@ import MainLayout from '../layouts/MainLayout.astro';
     <h1>Let's Connect</h1>
 
     <p class="intro">
-      I'm currently seeking opportunities in mechanical engineering and would
-      welcome the opportunity to connect.
+      I'm currently seeking opportunities in mechanical engineering and am
+      always open to discussing engineering, project management, operations,
+      or potential career opportunities. Feel free to reach out.
     </p>
 
     <div class="contact-grid">
@@ -22,7 +23,14 @@ import MainLayout from '../layouts/MainLayout.astro';
         href="mailto:jthuynh06@gmail.com"
       >
         <h2>Email</h2>
-        <p>jthuynh06@gmail.com</p>
+
+        <p class="contact-info">
+          jthuynh06@gmail.com
+        </p>
+
+        <p class="contact-subtitle">
+          Send me a message
+        </p>
       </a>
 
       <a
@@ -32,15 +40,45 @@ import MainLayout from '../layouts/MainLayout.astro';
         rel="noopener noreferrer"
       >
         <h2>LinkedIn</h2>
-        <p>linkedin.com/in/jackyhuynh-me</p>
+
+        <p class="contact-info">
+          linkedin.com/in/jackyhuynh-me
+        </p>
+
+        <p class="contact-subtitle">
+          Connect professionally
+        </p>
+      </a>
+
+      <a
+        class="contact-card"
+        href="https://jackyhuynh.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <h2>Website</h2>
+
+        <p class="contact-info">
+          jackyhuynh.com
+        </p>
+
+        <p class="contact-subtitle">
+          View my portfolio
+        </p>
       </a>
     </div>
+
+    <p class="closing">
+      Whether you're looking to discuss an engineering opportunity,
+      collaborate on a project, or simply connect, I'd be happy to hear
+      from you.
+    </p>
   </section>
 </MainLayout>
 
 <style>
   .hero {
-    max-width: 48rem;
+    max-width: 64rem;
   }
 
   .eyebrow {
@@ -58,7 +96,9 @@ import MainLayout from '../layouts/MainLayout.astro';
 
   .contact-grid {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   .contact-card {
@@ -81,10 +121,30 @@ import MainLayout from '../layouts/MainLayout.astro';
   }
 
   .contact-card h2 {
-    margin-bottom: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
   }
 
-  .contact-card p {
+  .contact-info {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    word-break: break-word;
+  }
+
+  .contact-subtitle {
     margin-bottom: 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+  }
+
+  .closing {
+    max-width: 42rem;
+    color: var(--text-secondary);
+  }
+
+  @media (max-width: 900px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
   }
 </style>

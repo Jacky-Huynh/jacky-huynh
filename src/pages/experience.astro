@@ -4,66 +4,90 @@ import MainLayout from '../layouts/MainLayout.astro';
 
 <MainLayout
   title="Experience"
-  description="Professional experience and leadership background."
+  description="Professional experience, leadership, and engineering background of Jacky Huynh."
 >
   <section class="hero">
     <p class="eyebrow">Experience</p>
 
-    <h1>Engineering, Leadership, and Operations</h1>
+    <h1>Professional Experience</h1>
 
     <p class="intro">
-      A combination of technical education, business leadership, and
-      hands-on operational experience.
+      Experiences that have shaped my leadership, problem-solving,
+      project management, and engineering mindset.
     </p>
   </section>
 
-  <section class="experience-section">
-    <h2>Engineering Experience</h2>
+  <section class="project-grid">
+    <a class="project-card" href="/experience/my-beloved-lash">
+      <img
+        src="/images/experience/my-beloved-lash.jpg"
+        alt="My Beloved Lash"
+      />
 
-    <div class="timeline-item">
-      <div class="timeline-header">
-        <h3>Temple University</h3>
-        <span>B.S. Mechanical Engineering</span>
+      <div class="project-content">
+        <p class="role">Operations Manager</p>
+
+        <h2>My Beloved Lash</h2>
+
+        <p>
+          Built and operated a service business from concept to operation,
+          overseeing commercial build-out, team leadership, process
+          development, marketing, and daily business operations.
+        </p>
+
+        <span>
+          Leadership • Operations • Project Management • Compliance
+        </span>
       </div>
+    </a>
 
-      <p>
-        Developed a foundation in CAD, simulation, product design, and
-        engineering problem-solving through coursework and hands-on projects.
-      </p>
-    </div>
-  </section>
+    <a class="project-card" href="/experience/mcmaster-carr">
+      <img
+        src="/images/experience/mcmaster-carr.jpg"
+        alt="McMaster-Carr"
+      />
 
-  <section class="experience-section">
-    <h2>Operations & Leadership</h2>
+      <div class="project-content">
+        <p class="role">
+          Supply Chain Operations Associate & Ergonomic Coach
+        </p>
 
-    <div class="timeline-item">
-      <div class="timeline-header">
-        <h3>My Beloved Lash</h3>
-        <span>Co-Owner & Operations Manager</span>
+        <h2>McMaster-Carr</h2>
+
+        <p>
+          Supported supply chain operations within a highly standardized
+          distribution environment while contributing to workplace safety,
+          ergonomics, and process improvement initiatives.
+        </p>
+
+        <span>
+          Manufacturing • Logistics • Process Improvement • Safety
+        </span>
       </div>
+    </a>
 
-      <p>
-        Led business operations, managed projects, coordinated vendors,
-        developed processes, and oversaw a growing team in a fast-paced
-        environment.
-      </p>
-    </div>
-  </section>
+    <a class="project-card" href="/experience/temple-university">
+      <img
+        src="/images/experience/temple-university.jpg"
+        alt="Temple University Mechanical Engineering"
+      />
 
-  <section class="experience-section">
-    <h2>Manufacturing & Process</h2>
+      <div class="project-content">
+        <p class="role">B.S. Mechanical Engineering</p>
 
-    <div class="timeline-item">
-      <div class="timeline-header">
-        <h3>McMaster-Carr</h3>
-        <span>Distribution Specialist & Ergonomic Coach</span>
+        <h2>Temple University</h2>
+
+        <p>
+          Developed a foundation in mechanical engineering through
+          coursework, design projects, simulation, analysis, and
+          multidisciplinary collaboration.
+        </p>
+
+        <span>
+          Mechanical Design • CAD • Engineering Analysis • Leadership
+        </span>
       </div>
-
-      <p>
-        Maintained high levels of accuracy and efficiency while supporting
-        training initiatives and process improvement efforts.
-      </p>
-    </div>
+    </a>
   </section>
 </MainLayout>
 
@@ -73,48 +97,85 @@ import MainLayout from '../layouts/MainLayout.astro';
     margin-bottom: 4rem;
   }
 
-  .eyebrow {
-    color: var(--accent);
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-  }
-
   .intro {
     max-width: 42rem;
     font-size: 1.125rem;
   }
 
-  .experience-section {
-    margin-bottom: 4rem;
+  .project-grid {
+    display: grid;
+    gap: 2rem;
   }
 
-  .timeline-item {
-    padding: 2rem;
+  .project-card {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 0;
 
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 24px;
+
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
-  .timeline-header {
+  .project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+  }
+
+  .project-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .project-content {
+    padding: 1.5rem;
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 1rem;
-
-    margin-bottom: 1rem;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .timeline-header span {
+  .project-content .role {
+    margin: 0 0 0.25rem 0;
+
     color: var(--text-secondary);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
 
-  @media (max-width: 768px) {
-    .timeline-header {
-      flex-direction: column;
-      gap: 0.5rem;
+  .project-content h2 {
+    margin: 0 0 0.75rem 0;
+    line-height: 1.2;
+  }
+
+  .project-content p:last-of-type {
+    margin-bottom: 0.75rem;
+  }
+
+  .project-content span {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  @media (max-width: 900px) {
+    .project-card {
+      grid-template-columns: 1fr;
+    }
+
+    .project-card img {
+      height: 220px;
+    }
+
+    .project-content {
+      padding: 1.25rem;
     }
   }
 </style>
